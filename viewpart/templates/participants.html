@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+        <table id='theTable' border=5 class='display' style='width:100%' >
+                <thead>
+                  <tr>
+                    <th class='col-6'>courseid</th>
+                    <th class='col-6'>Name</th>
+                    <th class='col-6'>Email address</th>
+                    <th class='col-6'>college name</th>
+                    <th class='col-6'>Phonenumber</th>
+                    <th class='col-6'>address</th>
+                    <th class='col-6'>Queries</th>
+                  </tr>
+                </thead>
+                {% for id in id %}
+                <tr>
+                    <td>{{id.courseid}}</td>
+                    <td>{{id.name}}</td>
+                    <td>{{id.email}}</td>
+                    <td>{{id.collegename}}</td>
+                    <td>{{id.number}}</td>
+                    <td>{{id.address}}</td>
+                    <td>{{id.quries}}</td>
+                </tr>
+                    {% endfor %}    
+        </table>  
+                
+    
+</body>
+</html>
